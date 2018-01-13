@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('tema1-angularcli App', () => {
+describe('curso-angular App', () => {
   let page: AppPage;
 
   beforeEach(() => {

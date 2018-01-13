@@ -18,11 +18,18 @@ export class AppComponent {
 
     this.header = 'Cervezas';
     this.beers = this.dataService.getBeers();
-  };
+  }
 
   reverseList() {
     this.beers.reverse();
     this._dataService.setBeers(this.beers);
+  }
+
+  addBeer(id: string, description: string) {
+    this.dataService.addBeer({
+      id: id,
+      description: description
+    });
   }
 
 }

@@ -35,4 +35,8 @@ export class DataService {
     this.beers = beers;
   }
 
+  addBeer(beer: Beer) {
+    this.beers.push(beer);
+  }
+
 }

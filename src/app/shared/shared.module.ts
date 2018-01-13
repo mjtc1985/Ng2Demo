@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
+import { DataService } from './data.service';
 
 @NgModule({
     declarations: [
@@ -10,14 +11,15 @@ import { ListComponent } from './list/list.component';
         ListComponent
     ],
     imports: [
-
+        CommonModule
     ],
     exports: [
+        CommonModule,
         HeaderComponent,
         ListComponent
     ],
     providers: [
-
+        DataService
     ],
   })
   export class SharedModule { }

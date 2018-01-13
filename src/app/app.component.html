@@ -2,8 +2,8 @@
 
 <app-list [beerList]="beers" (reverseList)="reverseList($event)"></app-list>
 
+<button (click)="loadBeers()">Load Beers</button>
+<br />
 <input id="idBeer" #newBeerId />
 <input id="descriptionBeer" #newBeerDescr />
 <button (click)="addBeer(newBeerId.value, newBeerDescr.value)">Add beer</button>
-<br />
-<button (click)="loadBeers()">Load Beers</button>

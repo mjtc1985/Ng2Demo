@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
 import { DataService } from './data.service';
+import { IdFormatterPipe } from './idFormatter/idFormatter.pipe';
 
 @NgModule({
     declarations: [
         HeaderComponent,
-        ListComponent
+        ListComponent,
+        IdFormatterPipe
     ],
     imports: [
         CommonModule
@@ -16,7 +18,8 @@ import { DataService } from './data.service';
     exports: [
         CommonModule,
         HeaderComponent,
-        ListComponent
+        ListComponent,
+        IdFormatterPipe
     ],
     providers: [
         DataService

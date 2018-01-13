@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(private _dataService: DataService) {
     this.dataService = _dataService;
 
-    this.header = 'Cervezas';
+    this.header = 'cervezas';
   }
 
   reverseList() {

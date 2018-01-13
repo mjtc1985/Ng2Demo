@@ -17,7 +17,6 @@ export class AppComponent {
     this.dataService = _dataService;
 
     this.header = 'Cervezas';
-    this.beers = this.dataService.getBeers();
   }
 
   reverseList() {
@@ -30,6 +29,10 @@ export class AppComponent {
       id: id,
       description: description
     });
+  }
+
+  loadBeers() {
+    this.beers = this.dataService.getBeers();
   }
 
 }

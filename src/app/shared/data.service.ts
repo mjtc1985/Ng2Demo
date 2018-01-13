@@ -31,4 +31,8 @@ export class DataService {
     return this.beers;
   }
 
+  setBeers(beers: Array<Beer>) {
+    this.beers = beers;
+  }
+
 }

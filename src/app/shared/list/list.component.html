@@ -1,3 +1,5 @@
 <ul>
     <li [attr.id]="i" *ngFor="let beer of beerList; let i = index">{{beer.id + "-" + beer.description}}</li>
 </ul>
+
+<button (click)="emitEvent()">Reverse</button>
